@@ -1,0 +1,123 @@
+@font-face  {
+    font-family: myFirstFont;
+     src: url(DroidKufi-Bold_1.ttf);
+}
+
+body,h1,h2,h3,a{
+
+/*font-family:myFirstFont !important;*/
+}
+.page-bar{
+    margin-bottom: 10px !important;
+}
+.btnform{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.form-control {
+ 
+    height: 42px !important;
+}
+/* here you can put your own css to customize and override the theme */
+.page-footer .page-footer-inner {
+    float: left;
+}
+.page-header .navbar-brand img {
+    
+    max-height: 100px;
+        }
+ .page-header {
+   
+    height: 130x;
+ }
+ .page-header .navbar-brand {
+    height: 84px;
+    max-height: 90px;
+ }
+        @media only screen and (max-width: 480px) {
+            #map{
+         
+           
+            }
+.page-container + span{
+display:none;
+
+}
+            .dataTables_wrapper .dataTables_filter{
+                margin-top: 0px;
+            }
+            div.dataTables_length, div.dataTables_filter{
+              width: 100%;  
+            }
+            .page-header .navbar:before{
+                border:none;
+            }
+         .page-header .navbar-brand img {
+             margin-top: 10px;
+             display: inline
+        }
+        .page-header .navbar-brand  {
+          display: inline   
+        }
+        }
+ @media only screen and (max-width:720px) {
+.rm{
+    margin-top: 15px;
+}
+}
+        @media only screen and (max-width: 800px) {
+	.hname{
+           
+                
+            }
+	/* Force table to not be like tables anymore */
+	.table-bordered , 
+	.table-bordered thead, 
+	.table-bordered  tbody, 
+	.table-bordered  th, 
+	.table-bordered  td, 
+	.table-bordered  tr { 
+		display: block; 
+	}
+ 
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.table-bordered  thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ 
+	.table-bordered tr { border: 1px solid #ccc; }
+ 
+	.table-bordered td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+		white-space: normal;
+		text-align:left;
+	}
+ 
+	.table-bordered  td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		right: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:right;
+		font-weight: bold;
+	}
+ 
+	/*
+	Label the data
+	*/
+	.table-bordered td:before { content: attr(data-title); }
+.table-bordered .noter:before{ position:static;   display: block;}
+}
+.input-medium {
+    width: 100% !important;
+}

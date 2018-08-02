@@ -1,0 +1,14 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Bank extends Model
+{
+     public function payments()
+    {
+
+        return $this->hasOne('App\Payment', 'bank_to','id');
+    }
+}
