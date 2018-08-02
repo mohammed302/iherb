@@ -52,7 +52,7 @@
 
                         <td data-title="خيارات">
 
-@if(sizeof($c->payments)==0)
+@if($c->payments==null)
                             <a href="#"	value="{{route("banks.destroy",["country" =>$c])}}"
                                data-token="{{ csrf_token() }}"
                                data-id="{{ $c->id }}" 

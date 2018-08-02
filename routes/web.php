@@ -85,7 +85,7 @@ Route::group(['namespace' => 'Admin'], function() {
     Route::resource('admin-cpx/states', 'StateController');
        Route::resource('admin-cpx/banks', 'BankController');
   //  Route::resource('admin-cpx/charges', 'ChargeController');
-
+  Route::get('states/create', 'StateController@store')->name('state2.create');
     //////////////////////////////////////////////////////
 });
 
