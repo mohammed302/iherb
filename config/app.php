@@ -143,6 +143,8 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Folklore\Image\ImageServiceProvider::class,
+        Way\Generators\GeneratorsServiceProvider::class,
+        Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class,
         /*
          * Package Service Providers...
          */
@@ -206,5 +208,4 @@ return [
         'ctivity' => Kim\Activity\ActivityFacade::class,
         'Image' => Folklore\Image\Facades\Image::class,
     ],
-
 ];
